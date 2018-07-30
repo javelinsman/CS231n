@@ -20,7 +20,7 @@
 ## KNN
 * 가장 단순한 방법은 nearest neighbor를 고려하는 것
 * 거리를 측정하는 방법은 여러가지
-  * L1 distance metric ![d_1(I_1,I_2)=\sum_p{|I_1^p-I_2^p|}](https://latex.codecogs.com/png.latex?d_1%28I_1%2CI_2%29%3D%5Csum_p%7B%7CI_1%5Ep-I_2%5Ep%7C%7D)
+  * L1 distance metric ![](https://latex.codecogs.com/png.latex?d_1%28I_1%2CI_2%29%3D%5Csum_p%7B%7CI_1%5Ep-I_2%5Ep%7C%7D)
   * L2 distance metric ![d_2(I_1,I_2)=\sum_p{\sqrt{(I_1^p-I_2^p)^2}}](https://latex.codecogs.com/png.latex?d_2(I_1,I_2)=\sum_p{\sqrt{(I_1^p-I_2^p)^2}})
   * L1은 좌표계 rotation에 invariant하지 않음
 * 시간복잡도

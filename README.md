@@ -50,8 +50,8 @@ Linear Classification
 * Parametric approach: training data로부터 정보를 추출해서 parameter에 저장해두고, predict할 땐 그것만 사용함.
   * ![f(x,W)](https://latex.codecogs.com/png.latex?f(x,W))
 * Linear classifier는 아주 간단하게 ![f(x,W)=Wx+b](https://latex.codecogs.com/png.latex?f(x,W)=Wx+b)임. 여기서 ![x](https://latex.codecogs.com/png.latex?x)는 이미지를 일차원으로 쭉 늘어뜨린 벡터.
-* 직관적으로 해석하면, i번째 클래스에 속할 점수를 ![s_i](https://latex.codecogs.com/png.latex?s_i)라고 할 때 ![w_i^T x + b_i = s_i](https://latex.codecogs.com/png.latex?w_i^T x + b_i = s_i)가 되기 때문에 ![w_i^T](https://latex.codecogs.com/png.latex?w_i^T)가 template같은 느낌이 됨.
+* 직관적으로 해석하면, i번째 클래스에 속할 점수를 ![s_i](https://latex.codecogs.com/png.latex?s_i)라고 할 때 ![w_i^Tx+b_i=s_i](https://latex.codecogs.com/png.latex?w_i^Tx+b_i=s_i)가 되기 때문에 ![w_i^T](https://latex.codecogs.com/png.latex?w_i^T)가 template같은 느낌이 됨.
   * ![b_i](https://latex.codecogs.com/png.latex?b_i)는 bias로서 특정 카테고리에 속할 확률이 높은 경우 (예. 데이터셋이 고양이만 99만마리) 보정해주기 위함
   * 클래스당 template이 하나 밖에 없기 때문에 average가 취해질 수밖에 없고, 그래서 설명력이 제한적임.
-* 다른 관점에서는, ![w_i^T x + b_i](https://latex.codecogs.com/png.latex?w_i^T x + b_i)를 hyperplane으로 생각하면, 각각의 hyperplane들과 ![z=0](https://latex.codecogs.com/png.latex?z=0)의 교선들이 대강 그 클래스에 속하는 것과 그 클래스가 아닌 것을 양분한다고 볼 수 있음
+* 다른 관점에서는, ![w_i^Tx+b_i](https://latex.codecogs.com/png.latex?w_i^T x + b_i)를 hyperplane으로 생각하면, 각각의 hyperplane들과 ![z=0](https://latex.codecogs.com/png.latex?z=0)의 교선들이 대강 그 클래스에 속하는 것과 그 클래스가 아닌 것을 양분한다고 볼 수 있음
   * 그렇기 때문에 parity check (1, 3사분면은 class 1이고 2, 4사분면은 class 2)나, 원형이거나, 같은 class가 전혀 다른 곳에서 두 개 이상의 cluster를 이루거나 할 때 liner classifier는 곤란해짐

@@ -17,7 +17,7 @@
   * 데이터 모으고 -> classifier 훈련시키고 -> 새로운 이미지에 그 classifier를 사용한다
   * CIFAR10이라는 dataset은 10 class로 나뉜 약 50,000개의 training image와 10,000개의 test image가 있다
   
-KNN
+## KNN
 * 가장 단순한 방법은 nearest neighbor를 고려하는 것
 * 거리를 측정하는 방법은 여러가지
   * L1 distance metric ![d_1(I_1,I_2)=\sum_p{|I_1^p-I_2^p|}](https://latex.codecogs.com/png.latex?d_1(I_1,I_2)=\sum_p{|I_1^p-I_2^p|})
@@ -34,7 +34,7 @@ KNN
     * 사람 사진에 마스크 씌우고 조도 좀 낮추면 distance 0으로 만드는 게 가능함
   * 이유 2: KNN은 instance space를 조밀하게 representative들이 채우고 있어야 말이 되는데, 차원 늘어날 수록 조밀하게 채우기 위해 필요한 원소의 수가 지수증가함.
 
-Hyperparameter
+## Hyperparameter
 * KNN에서 K의 값이나, distance metric의 종류 같은 건 미리 정해서 프로그램을 돌려야 하는데 이런 걸 hyperparamter라고 부름
 * Idea #1: 원래 데이터에 가장 잘 맞는 hyperparameter 선택하기
   * Overfitting 되기 때문에 안 좋음. 예를 들어 이 경우 K=1인 KNN이 선택됨.
@@ -45,7 +45,7 @@ Hyperparameter
   * dataset 작으면 쓸만 한데, 딥러닝에선 잘 안 쓴다
 * 여러 hyperparameter에 대해 돌려보고 plotting 해보면 뭘 골라야 하는지 감이 옴.
 
-Linear Classification
+## Linear Classification
 * 간단해 보이지만 콤비네이션 하면 뉴럴넷이 되므로 중요.
 * Parametric approach: training data로부터 정보를 추출해서 parameter에 저장해두고, predict할 땐 그것만 사용함.
   * ![f(x,W)](https://latex.codecogs.com/png.latex?f(x,W))

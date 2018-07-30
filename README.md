@@ -6,7 +6,7 @@
 
 * Image Classification이란 이미지를 보고 그것이 속한 카테고리를 분류하는 것 (예. 고양이 사진 -> "cat")
 * 인간의 뇌로는 쉽지만 컴퓨터는 각 픽셀의 RGBA 값 밖에 몰라서 어렵다.
-  * Viewpoint variatioN: 카메라가 이동하거나
+  * Viewpoint variation: 카메라가 이동하거나
   * Illumination: 조도가 변하거나
   * Deformation: 같은 물체가 평소랑 다른 모습으로 있을 수도 있고
   * Occlusion: 다른 물체랑 겹칠 수도 있고

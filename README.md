@@ -22,6 +22,7 @@
 * 거리를 측정하는 방법은 여러가지
   * L1 distance metric ![d_1(I_1,I_2)=\sum_p{|I_1^p-I_2^p|}](https://latex.codecogs.com/png.latex?d_1(I_1,I_2)=\sum_p{|I_1^p-I_2^p|})
   * L2 distance metric ![d_2(I_1,I_2)=\sum_p{\sqrt{(I_1^p-I_2^p)^2}}](https://latex.codecogs.com/png.latex?d_2(I_1,I_2)=\sum_p{\sqrt{(I_1^p-I_2^p)^2}})
+  * L1은 좌표계 rotation에 invariant하지 않음
 * 시간복잡도
   * 그냥 training set을 저장해두면 훈련 끝 O(1)
   * 대신 predict할 때 모든 저장된 걸 다 봐야해서 O(N)이다

@@ -1,6 +1,14 @@
 # CS231n 정리 노트
 
-수강하면서 적당히 정리해 놓는 노트
+* 수강하면서 적당히 정리해 놓는 노트
+* 모든 내용과 자료는 [스탠포드 CS231n 강의](http://cs231n.stanford.edu/)에서 퍼온 것  
+  (All contents and resources are from [Stanford University CS231n](http://cs231n.stanford.edu/))
+
+## 글 쓸 때 유의할 것
+
+* github readme랑 github pages에서 동시에 렌더링 되기 위해서 몇가지 주의해야 함
+* \|는 pages에서 table로 rendering 될 수 있으므로 주의(latex 링크를 quote해서 첨부할 것)
+* 이미지는 경로를 \/로 시작하지 말고 폴더명부터 시작할 것
 
 # Lecture 2: Image Classification Pipeline
 
